@@ -32,15 +32,15 @@
 			if (xmlhttp.readyState == 4) {
 				if (xmlhttp.status == 200) {
 					localStorage.setItem(name, JSON.stringify({
-            			content: xmlhttp.responseText,
-            			version: version
-          			}));
+            					content: xmlhttp.responseText,
+            					version: version
+          				}));
 					_injectScript(name, version, url, css, callback)
-        		} else {
+        			} else {
 					if (callback) callback();
-        		}
-      		}
-    	}
+        			}
+      			}
+    		}
     	xmlhttp.open("GET", url, true);
     	xmlhttp.send();
 	}
