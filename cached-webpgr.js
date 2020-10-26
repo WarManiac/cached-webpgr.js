@@ -22,7 +22,7 @@
  * @param {string} url (see `requireScript` or 'css')
  * @param {string} name (see `requireScript` or 'css')
  * @param {string} version (see `requireScript` or 'css')
- * @param {bool} css (false =js, true=css)
+ * @param {Boolean} css (false =js, true=css)
  * @param {Function} callback (see `requireScript` or 'css')
  */
 	var dd=document;
